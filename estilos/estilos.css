@@ -562,6 +562,7 @@ div.contenido-programa {
         align-items: center;
     }
     .cont-precio{
+        margin-bottom: 2rem;
         max-width: 100%;
     }
 }
