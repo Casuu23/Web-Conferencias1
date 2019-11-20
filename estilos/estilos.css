@@ -495,10 +495,15 @@ div.contenido-programa {
     .resumen {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        
     }
 
     .resumen li {
         margin-right: 0;
+        font-size: 2.5rem;
+    }
+    .resumen p {
+        font-size: 3.5rem;
     }
 }
 
@@ -531,9 +536,38 @@ div.contenido-programa {
     margin: 0 auto;
     text-align: center;
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 3rem;
+   
 }
+.precio1{grid-area: 1;}
+@media(max-width:800px){
+.contenedor-precios{
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-template-rows: 2fr;
+    grid-template-areas: "area1 area2"
+                          "area3 area3" ;
+}
+.precio3{
+    grid-column-start: area3;
+    grid-column-end: area3;
+    max-width: 40%;
+}
+}
+@media(max-width:630px){
+    .contenedor-precios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont-precio{
+        max-width: 100%;
+    }
+}
+
+
+   
 
 .cont-precio {
    background: rgb(226, 226, 226);
