@@ -6,6 +6,8 @@ html {
 body {
     font-family: "Lato", sans-serif;
     font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -683,8 +685,6 @@ div.contenido-programa {
         margin-left: 3rem;
     }
 }
-
-
 .cont-img-test {
     width: 8rem;
 }
