@@ -495,13 +495,14 @@ div.contenido-programa {
     .resumen {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+
     }
 
     .resumen li {
         margin-right: 0;
         font-size: 2.5rem;
     }
+
     .resumen p {
         font-size: 3.5rem;
     }
@@ -538,45 +539,57 @@ div.contenido-programa {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-   
+
 }
-.precio1{grid-area: 1;}
-@media(max-width:800px){
-.contenedor-precios{
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 2rem;
-    grid-template-rows: 2fr;
-    grid-template-areas: "area1 area2"
-                          "area3 area3" ;
+
+.precio1 {
+    grid-area: 1;
 }
-.precio3{
-    grid-column-start: area3;
-    grid-column-end: area3;
-    max-width: 40%;
+
+@media(max-width:800px) {
+    .contenedor-precios {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 2rem;
+        grid-template-rows: 2fr;
+        grid-template-areas: "area1 area2"
+            "area3 area3";
+    }
+
+    .precio3 {
+        grid-column-start: area3;
+        grid-column-end: area3;
+        max-width: 40%;
+    }
 }
-}
-@media(max-width:630px){
-    .contenedor-precios{
+
+@media(max-width:630px) {
+    .contenedor-precios {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .cont-precio{
+
+    .cont-precio {
         margin-bottom: 2rem;
         max-width: 100%;
     }
 }
 
 
-   
-
 .cont-precio {
-   background: rgb(226, 226, 226);
+    background: rgb(226, 226, 226);
     padding: 2rem 0rem;
     width: 80%;
     -webkit-box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+}
+
+.cont-precio:hover {
+    transform: scale(1.1);
+    border: solid #fe4918 1px;
+    box-shadow: 0px 0px 50px #666;
+    transition: all 0.5s ease;
 }
 
 .cont-precio h3 {
@@ -595,8 +608,123 @@ div.contenido-programa {
 .lista-cont p {
     margin-bottom: 1rem;
     text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .btn-comprar {
     margin-top: 4rem;
+}
+
+.lista-cont i {
+    margin-right: 1rem;
+    color: green;
+}
+
+/** inicio mapa **/
+.mapa {
+    margin-top: 6rem;
+    height: 42rem;
+    background: green;
+}
+
+/** fin mapa **/
+
+/** inicio Testimoniales **/
+.testimoniales h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.testimoniales h2::after {
+    content: "";
+    margin: 0 auto;
+    background-image: url(/Recursos/img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+.cont-testimoniales {
+    max-width: 93%;
+    margin: 0 auto;
+    display: flex;
+}
+@media(max-width:1060px){
+    .cont-testimoniales{
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "area1 area2"
+            "area3 area3";
+    }
+    .testimonial-3{
+        grid-column-start: area3;
+        grid-column-end: area3;
+        max-width: 45%;  
+    }
+}
+.cont-txt-img-test{
+    display: flex;
+    justify-content: space-around;
+}
+@media(max-width:780px){
+    .cont-testimoniales{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-3{
+        max-width: 100%;
+    }
+    .cont-txt-img-test{
+        justify-content: start;
+    }
+    .cont-txt-img-test{
+        margin-left: 3rem;
+    }
+    .txt-testimonial{
+        margin-left: 3rem;
+    }
+}
+
+
+.cont-img-test {
+    width: 8rem;
+}
+
+.testimonial {
+    text-align: justify;
+    line-height: 2;
+    padding: 0 1rem;
+    border: 1px solid black;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.testimonial img {
+    max-width: 100%;
+    border-radius: 100px;
+}
+
+.txt-testimonial h4 {
+    color: #fe4918;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.txt-testimonial p {
+    margin: 0;
+}
+
+.cont-comi-txt {
+    padding: 0 4rem;
+    position: relative;
+
+}
+
+.cont-comi-txt i {
+    position: absolute;
+    margin-top: 0.5rem;
+    top: 0;
+    left: 0;
+    color: #fe4918;
+
 }
