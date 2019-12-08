@@ -747,7 +747,7 @@ text-transform: uppercase;
 font-family: 'Oswald',sans-serif;
 font-size: 2.5rem;
 }
-p.numero{
+p.numero-c{
     font-size: 6rem;
     color: #fe4918;
 }
@@ -761,4 +761,11 @@ p.numero{
 }
 .cuenta-regresiva p{
    margin: 0 0 1rem 0;
+}
+@media(max-width:700px){
+    .cuenta-regresiva ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 2rem;
+    }
 }
