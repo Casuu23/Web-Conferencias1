@@ -719,12 +719,46 @@ div.contenido-programa {
     position: relative;
 
 }
-
 .cont-comi-txt i {
     position: absolute;
     margin-top: 0.5rem;
     top: 0;
     left: 0;
     color: #fe4918;
-
+}
+/** incio de contador **/
+.conten-contador h2::after {
+    content: "";
+    margin: 0 auto;
+    background-image: url(/Recursos/img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+.conten-contador{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.cuenta-regresiva ul li{
+text-transform: uppercase;
+font-family: 'Oswald',sans-serif;
+font-size: 2.5rem;
+}
+p.numero{
+    font-size: 6rem;
+    color: #fe4918;
+}
+.cuenta-regresiva{
+    margin-top: 5rem;
+}
+.cuenta-regresiva ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.cuenta-regresiva p{
+   margin: 0 0 1rem 0;
 }
