@@ -343,7 +343,7 @@ div.contenido-programa {
 @media(max-width:1125px) {
     div.contenido-programa{
         position: relative;
-        max-width: 70%;
+        max-width: 85%;
         margin: 0 auto;
     }
     .cont-video video{
