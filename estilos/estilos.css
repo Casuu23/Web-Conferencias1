@@ -1,6 +1,8 @@
 html {
     font-size: 62.5%;
     /** RESET PARA REMS - 62.5% = 10PX DE 16PX**/
+    margin:0;
+    padding: 0;
 }
 
 body {
@@ -8,6 +10,7 @@ body {
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
+    background: rgb(230, 228, 228);
 }
 
 h2 {
@@ -52,6 +55,27 @@ ul {
     background-size: cover;
 }
 
+.cont-redes-f i {
+    margin: 2rem 2rem 0 0;
+    font-size: 3rem;
+    color: white;
+    transition: all 0.3s;
+    -webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    transition: transform 1s ease-out;
+}
+
+.cont-redes-f i:hover {
+    color: #fe4918;
+    -moz-transform: rotatey(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotatey(360deg);
+
+
+
+
+}
+
 .cont-redes {
     text-align: center;
 }
@@ -61,10 +85,16 @@ ul {
     font-size: 3rem;
     color: white;
     transition: all 0.3s;
+    webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    transition: transform 1s ease-out;
 }
 
 .cont-redes i:hover {
-    color: black;
+    color: #fe4918;
+    -moz-transform: rotatey(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotatey(360deg);
 }
 
 .cont-fecha-ubicacion i {
@@ -310,7 +340,16 @@ div.contenido-programa {
     width: auto;
 }
 
-@media(max-width:850px) {}
+@media(max-width:1125px) {
+    div.contenido-programa{
+        position: relative;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .cont-video video{
+        display: none;
+    }
+}
 
 .contenedor-programa {
     width: 100%;
@@ -456,6 +495,7 @@ div.contenido-programa {
 /** contador inicio**/
 .contenedor {
     width: 100%;
+    margin-top: 6rem;
     height: 30rem;
     background-image: url(/Recursos/img/bg-resumen.jpg);
     background-position: center center;
@@ -577,9 +617,8 @@ div.contenido-programa {
     }
 }
 
-
 .cont-precio {
-    background: rgb(226, 226, 226);
+    background: white;
     padding: 2rem 0rem;
     width: 80%;
     -webkit-box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
@@ -632,10 +671,15 @@ div.contenido-programa {
 /** fin mapa **/
 
 /** inicio Testimoniales **/
-.testimoniales h2{
+.testimonial {
+    background: white;
+}
+
+.testimoniales h2 {
     text-align: center;
     text-transform: uppercase;
 }
+
 .testimoniales h2::after {
     content: "";
     margin: 0 auto;
@@ -644,47 +688,57 @@ div.contenido-programa {
     width: 100px;
     display: block;
 }
+
 .cont-testimoniales {
     max-width: 93%;
     margin: 0 auto;
     display: flex;
 }
-@media(max-width:1060px){
-    .cont-testimoniales{
+
+@media(max-width:1060px) {
+    .cont-testimoniales {
         justify-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "area1 area2"
             "area3 area3";
     }
-    .testimonial-3{
+
+    .testimonial-3 {
         grid-column-start: area3;
         grid-column-end: area3;
-        max-width: 45%;  
+        max-width: 45%;
     }
 }
-.cont-txt-img-test{
+
+.cont-txt-img-test {
     display: flex;
     justify-content: space-around;
 }
-@media(max-width:780px){
-    .cont-testimoniales{
+
+@media(max-width:780px) {
+    .cont-testimoniales {
         display: flex;
         flex-direction: column;
     }
-    .testimonial-3{
+
+    .testimonial-3 {
         max-width: 100%;
     }
-    .cont-txt-img-test{
+
+    .cont-txt-img-test {
         justify-content: start;
     }
-    .cont-txt-img-test{
+
+    .cont-txt-img-test {
         margin-left: 3rem;
     }
-    .txt-testimonial{
+
+    .txt-testimonial {
         margin-left: 3rem;
     }
 }
+
 .cont-img-test {
     width: 8rem;
 }
@@ -719,6 +773,7 @@ div.contenido-programa {
     position: relative;
 
 }
+
 .cont-comi-txt i {
     position: absolute;
     margin-top: 0.5rem;
@@ -726,6 +781,49 @@ div.contenido-programa {
     left: 0;
     color: #fe4918;
 }
+
+/** inicio Registro**/
+.cont-inscripcion {
+    margin-top: 8rem;
+    height: 35rem;
+    background-image: url(/Recursos/img/bg-inscribir.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.cont-txt-inscripcion p {
+    color: white;
+    margin: 0;
+}
+
+
+
+.cont-txt-inscripcion h1 {
+    font-size: 10rem;
+    margin: 0;
+    color: white;
+}
+@media(max-width:770px) {
+    .cont-txt-inscripcion h1{
+        font-size: 5rem;
+    }
+}
+
+.botom-registro {
+    border: solid white 2px;
+    padding: 5px 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+
 /** incio de contador **/
 .conten-contador h2::after {
     content: "";
@@ -735,37 +833,104 @@ div.contenido-programa {
     width: 100px;
     display: block;
 }
-.conten-contador{
+
+.conten-contador {
     width: 70%;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
 }
-.cuenta-regresiva ul li{
-text-transform: uppercase;
-font-family: 'Oswald',sans-serif;
-font-size: 2.5rem;
+
+.cuenta-regresiva ul li {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
 }
-p.numero-c{
+
+p.numero-c {
     font-size: 6rem;
     color: #fe4918;
 }
-.cuenta-regresiva{
+
+.cuenta-regresiva {
     margin-top: 5rem;
 }
-.cuenta-regresiva ul{
+
+.cuenta-regresiva ul {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.cuenta-regresiva p{
-   margin: 0 0 1rem 0;
+
+.cuenta-regresiva p {
+    margin: 0 0 1rem 0;
 }
-@media(max-width:700px){
-    .cuenta-regresiva ul{
+
+@media(max-width:700px) {
+    .cuenta-regresiva ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 2rem;
     }
+}
+
+/** inicio de foorer **/
+footer {
+    margin: 6rem 0 0 0;
+    display: flex;
+    padding: 2rem 0 2rem 2rem;
+    background: rgb(48, 43, 43);
+    color: white;
+}
+
+
+.sub-cont-footer {
+    width: 33.3%;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer span {
+    color: #fe4918;
+}
+
+footer p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 0 2rem 0 0;
+    line-height: 23px;
+}
+
+@media(max-width:1000px) {
+    footer {
+        display: none;
+    }
+
+    .derechos {
+        margin-top: 2rem;
+    }
+}
+
+.derechos {
+    text-align: center;
+    font-size: 1.2rem;
+    background: rgb(39, 37, 37);
+    padding: 1.5rem 0;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.derechos p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.derechos span {
+    margin-left: 1rem;
 }
