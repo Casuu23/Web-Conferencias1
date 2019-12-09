@@ -352,7 +352,6 @@ div.contenido-programa {
 }
 
 .contenedor-programa {
-    width: 100%;
     background: rgba(255, 255, 255, .7);
     padding: 1.5rem;
     border: black solid 1px;
@@ -751,6 +750,12 @@ div.contenido-programa {
     margin-top: 2rem;
     margin-left: 1rem;
 }
+@media(max-width:780px){
+    .testimonial{
+        margin-left: 0;
+    }
+}
+
 
 .testimonial img {
     max-width: 100%;
