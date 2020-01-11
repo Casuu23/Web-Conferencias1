@@ -142,27 +142,31 @@ ul {
 
 .cont-title {
     text-align: center;
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: bold;
     margin-top: -3rem;
     color: white;
     margin-left: 8rem;
     font-family: 'PT Sans', sans-serif;
 }
-
+.nombre-sitio span{
+    position: relative;
+    text-shadow: 2px 5px 2px #000000;
+    
+}
 .cont-title p {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-right: 6rem;
     margin-top: -3rem;
     font-weight: normal;
 }
 
-.cont-title span {
+.cont-title p span {
     font-weight: bold;
 }
 
 
-@media(max-width:735px) {
+@media(max-width:935px) {
     .cont-fecha-ubicacion {
         flex-direction: column;
     }
@@ -177,7 +181,7 @@ ul {
     }
 
     .cont-title {
-        font-size: 4rem;
+        font-size: 5rem;
         margin-left: 5rem;
 
     }
@@ -187,7 +191,7 @@ ul {
     }
 }
 
-@media(max-width:570px) {
+@media(max-width:670px) {
     .cont-title {
         font-size: 3rem;
         margin-left: 0;
@@ -366,7 +370,7 @@ div.contenido-programa {
 .contenedor-programa {
     background: rgba(255, 255, 255, .7);
     padding: 1.5rem;
-    border: black solid 1px;
+    border: #0000003a solid 1px;
     margin-top: 7rem;
 }
 
@@ -381,6 +385,7 @@ div.contenido-programa {
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
+    position: relative;
 
 }
 
@@ -677,7 +682,7 @@ div.contenido-programa {
 .mapa {
     margin-top: 6rem;
     height: 42rem;
-    background: green;
+    border: 1px solid black;
 }
 
 /** fin mapa **/
@@ -867,7 +872,7 @@ div.contenido-programa {
 }
 
 p.numero-c {
-    font-size: 6rem;
+    font-size: 10rem;
     color: #fe4918;
 }
 
@@ -879,6 +884,7 @@ p.numero-c {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    
 }
 
 .cuenta-regresiva p {
@@ -952,3 +958,8 @@ footer p {
 .derechos span {
     margin-left: 1rem;
 }
+
+div .ocultar{
+    display: none;
+}
+/** lettering **/
