@@ -1,0 +1,143 @@
+          /* REGISTRO */
+
+form .registro h3{
+    color: #fe4918;
+
+}
+form .orden label{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+section h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+h4 {
+ text-align: center;
+ text-transform: uppercase;
+ border-bottom: 0.2rem solid #fe4918 ;
+ padding-bottom: 1rem;
+ font-size: 1.2em;
+}
+div .caja{
+    background-color: white;
+    border: solid #e1e1e1;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+div .campo{
+  padding: 1rem;
+}
+div .contenedor-campos{
+ display: flex;
+ justify-content: center;
+}
+@media(max-width:768px){
+
+    div.contenedor-campos{
+       flex-direction: column;
+       
+    }
+}
+
+div .paquetes .contenedor-precios input{
+    clear: both;
+    width: 6rem;
+    margin: 2rem auto;
+   display: block;
+  
+}
+
+.contenido-dia{
+    padding: 2rem;
+    display: none;
+}
+.contenedor-talleres {
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 3rem;
+}
+@media(max-width:1090px){
+.contenedor-talleres{
+    grid-template-columns: 1fr 1fr;
+}
+  
+}
+@media(max-width:900px){
+    .contenedor-talleres{
+        grid-template-columns: 1fr;
+    }
+      
+    }
+.contenedor-talleres p{
+    text-align: left;
+    font-weight: bold;
+}
+.contenedor-talleres label{
+display: block;
+text-align: left;
+margin-bottom: 1rem;
+}
+.contenedor-talleres input{
+    margin-right: 1rem;
+   
+}
+.contenedor-talleres time{
+    color: #fe4918;
+    font-weight: bold;
+}
+/* inicio de pago y extras */
+
+div .resumen2 .extras{
+    text-align: start;
+}
+div .resumen2 label{
+    display: block;
+}
+div .resumen2  select{
+    margin-top: 1rem;
+}
+.orden {
+   margin-bottom: 2rem;
+}
+.regalo { 
+    margin-bottom: 2rem;
+}
+.contenedor-extras{
+   display: flex;
+   justify-content: space-around;
+}
+@media(max-width:1200px){
+    .contenedor-extras{
+        flex-direction: column;
+    }
+}
+
+div  #lista_productos{
+ background: #e1e1e1; 
+ max-width: 25rem; 
+ padding: 1rem;
+ font-weight: bold;
+ display: none;
+}
+div #suma_total{
+    background: #e1e1e1;  
+    max-width: 10rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fe4918;
+    font-weight: bold;
+    display: none;
+    
+}
+ #error{
+     font-size: 1.5rem;
+     text-align: center;
+     padding: 2rem;
+     color: red;
+     font-weight: bold;
+ }
